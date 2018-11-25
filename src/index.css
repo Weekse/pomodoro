@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  background: #000;
+  color: #ddd;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+   -khtml-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#timer {
+  font-size: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  background: #222;
+  color: #fff;
+  padding: 10px 20.5px;
+}
+#timerBox {
+  background: #2b2b2b;
+  width: 100%;
+}
+#controlsBox {
+  background: #2b2b2b;
+  width: 100%;
+}
+#sessionLength {
+  background: #222;
+  width: 100%;
+}
+#sessionBtns {
+  background: #2b2b2b;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#breakLength {
+  background: #222;
+  width: 100%;
+}
+#breakBtns {
+  background: #2b2b2b;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #222;
+  width: 50%;
+  position: absolute;
+  left: 25%;
+}
+
+#sessionBtns {
+  display: flex;
+  flex-direction: row;
+}
+#breakBtns {
+  display: flex;
+  flex-direction: row;
+}
+button {
+  margin: 10px 15px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.setNum {
+  font-size: 40px;
+}
+
+.animate {
+  animation: flash 2s infinite;
+}
+@keyframes flash {
+  0% {color: #fff}
+  50% {color: #f00}
+  100% {color: #fff}
+}
+
+@media only screen and (max-width: 1100px) {
+  #container {
+    width: 80%;
+    position: absolute;
+    left: 10%;
+  }
+}
+@media only screen and (max-width: 350px) {
+  #container {
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
